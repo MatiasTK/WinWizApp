@@ -1,0 +1,2 @@
+pywizlight==0.5.14
+rich==13.3.1

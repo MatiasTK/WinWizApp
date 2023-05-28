@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="customtkinter.CTk" id="app" named="True">
+    <property name="geometry">640x480</property>
+    <property name="resizable">none</property>
+    <child>
+      <object class="customtkinter.CTkFrame" id="sidebar" named="True">
+        <property name="width">14</property>
+        <layout manager="pack">
+          <property name="fill">y</property>
+          <property name="side">left</property>
+        </layout>
+        <child>
+          <object class="customtkinter.CTkLabel" id="sidebar_title" named="True">
+            <property name="font">{Arial} 20 {bold}</property>
+            <property name="text" translatable="yes">Wiz App</property>
+            <layout manager="pack">
+              <property name="expand">false</property>
+              <property name="fill">x</property>
+              <property name="padx">20</property>
+              <property name="pady">20</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="sidebar_encender" named="True">
+            <property name="text" translatable="yes">Encender Luces</property>
+            <layout manager="pack">
+              <property name="ipady">5</property>
+              <property name="padx">20</property>
+              <property name="pady">10</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="sidebar_apagar" named="True">
+            <property name="text" translatable="yes">Apagar Luces</property>
+            <layout manager="pack">
+              <property name="ipady">5</property>
+              <property name="padx">20</property>
+              <property name="pady">10</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkFrame" id="sidebar_brillo" named="True">
+            <property name="fg_color">#333333</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="side">bottom</property>
+            </layout>
+            <child>
+              <object class="customtkinter.CTkLabel" id="sidebar_brillo_title" named="True">
+                <property name="text" translatable="yes">Brillo</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="customtkinter.CTkSlider" id="sidebar_brillo_slider" named="True">
+                <property name="from_">0</property>
+                <property name="to">10</property>
+                <property name="width">0</property>
+                <layout manager="pack">
+                  <property name="fill">x</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="customtkinter.CTkLabel" id="sidebar_brillo_creditos" named="True">
+                <property name="font">{Arial} 14 {italic}</property>
+                <property name="text" translatable="yes">Creado por @MatiasTK</property>
+                <layout manager="pack">
+                  <property name="anchor">s</property>
+                  <property name="pady">10</property>
+                  <property name="side">bottom</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkLabel" id="sidebar_ip" named="True">
+            <property name="text" translatable="yes">IP: 192.168.1.36</property>
+            <layout manager="pack">
+              <property name="pady">10</property>
+              <property name="side">bottom</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="customtkinter.CTkLabel" id="blancos" named="True">
+        <property name="font">{Arial} 15 {bold}</property>
+        <property name="text" translatable="yes">Blancos</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="side">top</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="customtkinter.CTkFrame" id="blancos_opciones" named="True">
+        <property name="fg_color">#2b2b2b</property>
+        <property name="height">50</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">x</property>
+          <property name="padx">10</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="customtkinter.CTkButton" id="blancos_calido" named="True">
+            <property name="text" translatable="yes">Blanco calido</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="blancos_neutro" named="True">
+            <property name="text" translatable="yes">Blanco Neutro</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="blancos_frio" named="True">
+            <property name="text" translatable="yes">Blanco Frio</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="customtkinter.CTkLabel" id="funcionales" named="True">
+        <property name="font">{Arial} 15 {bold}</property>
+        <property name="text" translatable="yes">Funcionales</property>
+        <layout manager="pack">
+          <property name="anchor">center</property>
+          <property name="expand">true</property>
+          <property name="padx">20</property>
+          <property name="side">top</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="customtkinter.CTkFrame" id="funcionales_opciones_top" named="True">
+        <property name="fg_color">#2b2b2b</property>
+        <property name="height">50</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">x</property>
+          <property name="padx">10</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="customtkinter.CTkButton" id="funcionales_nocturna" named="True">
+            <property name="text" translatable="yes">Luz Nocturna</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="funcionales_acogedor" named="True">
+            <property name="text" translatable="yes">Acogedor</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="funcionales_concentracion" named="True">
+            <property name="text" translatable="yes">Concentracion</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="customtkinter.CTkFrame" id="funcionales_opciones_bot" named="True">
+        <property name="fg_color">#2b2b2b</property>
+        <property name="height">50</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">x</property>
+          <property name="padx">10</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="customtkinter.CTkButton" id="funcionales_relax" named="True">
+            <property name="text" translatable="yes">Relax</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="funcionales_television" named="True">
+            <property name="text" translatable="yes">Hora de la television</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="funcionales_reales" named="True">
+            <property name="text" translatable="yes">Colores Reales</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="customtkinter.CTkLabel" id="colores" named="True">
+        <property name="font">{Arial} 15 {bold}</property>
+        <property name="text" translatable="yes">Colores</property>
+        <layout manager="pack">
+          <property name="anchor">center</property>
+          <property name="expand">true</property>
+          <property name="padx">20</property>
+          <property name="side">top</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="customtkinter.CTkFrame" id="colores_opciones" named="True">
+        <property name="fg_color">#2b2b2b</property>
+        <property name="height">50</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">x</property>
+          <property name="padx">10</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="customtkinter.CTkButton" id="colores_rojo" named="True">
+            <property name="text" translatable="yes">Rojo</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="fill">y</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="colores_azul" named="True">
+            <property name="text" translatable="yes">Azul</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="customtkinter.CTkButton" id="colores_verde" named="True">
+            <property name="text" translatable="yes">Verde</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="ipady">5</property>
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="customtkinter.CTkButton" id="colores_opcion_custom" named="True">
+        <property name="text" translatable="yes">Custom</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">x</property>
+          <property name="ipady">5</property>
+          <property name="padx">10</property>
+          <property name="side">top</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

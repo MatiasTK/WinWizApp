@@ -1,2 +1,4 @@
+CTkColorPicker==0.4.0
+async-tkinter-loop==0.7.0
+customtkinter==5.1.2
 pywizlight==0.5.14
-rich==13.3.1
