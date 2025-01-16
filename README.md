@@ -1,3 +1,4 @@
+# ⚠️ Este repositorio esta obsoleto, aqui puedes encontrar la nueva versión hecha con electron: [MatiasTK/WizApp](https://github.com/MatiasTK/WizAPP)
 # Wiz App
 
 _Un simple script hecho en python para controlar las luces [WiZ](https://www.wizconnected.com/es-ar) del hogar._
